@@ -1,9 +1,19 @@
 = gists
 
-Description goes here.
+Stupid little methods that probably should be in ruby core, but aren't.
+
+= Installation
+
+It's a gem. Install it how you want.
+
+Bundler-enabled projects:
+ gem 'gists'
+Other projects:
+ $ gem install gists
+ require 'gists'
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
