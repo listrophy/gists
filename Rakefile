@@ -1,16 +1,17 @@
 require 'rubygems'
-require 'rake'
+require 'bundler'
+Bundler.require :default, :development, :test
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "gists"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A bunch of utility functions extracted from gists}
+    gem.description = %Q{Since gist.github.com is such a fantastic library of random utility functions, this gem is meant to collect the best and pull them into your everyday toolbox.}
     gem.email = "brad@bendyworks.com"
     gem.homepage = "http://github.com/listrophy/gists"
     gem.authors = ["Bradley Grzesiak"]
-    gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "rspec", ">= 1.3.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
