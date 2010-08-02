@@ -12,6 +12,29 @@ Other projects:
  $ gem install gists
  require 'gists'
 
+= Usage
+
+As of now, there are three methods:
+
+* Kernel#random_in *enumerable_or_many_args
+* Object#.in? enumerable
+* String#surround *one_or_two_args
+
+ >> require 'rubygems'
+ => true
+ >> require 'gists'
+ => true
+ >> random_in 1, 2, 3, 4
+ => 2
+ >> random_in 1..4
+ => 4
+ >> random_in [1, 2, 3, 4]
+ => 3
+ >> 'test'.in? ['development', 'test']
+ => true
+ >> "SELECT * FROM users WHERE name LIKE '%s'" % 'bob'.surround('%') # you should probably sanitize, too
+ => "SELECT * FROM users WHERE name LIKE '%bob%'"
+
 == Note on Patches/Pull Requests
 
 * Fork the project.
